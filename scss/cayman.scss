@@ -166,7 +166,7 @@ a {
   code {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #383e41;
     background-color: #f3f6fa;
     border-radius: 0.3rem;
@@ -186,7 +186,7 @@ a {
     > code {
       padding: 0;
       margin: 0;
-      font-size: 100%;
+      font-size: 0.9rem;
       color: #567482;
       word-break: normal;
       white-space: pre;
@@ -208,7 +208,7 @@ a {
   pre {
     padding: 1rem;
     overflow: auto;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.45;
     border-radius: 0.3rem;
   }
