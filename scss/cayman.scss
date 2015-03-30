@@ -22,7 +22,7 @@ a {
 
 .btn {
   display: inline-block;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
@@ -32,7 +32,7 @@ a {
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
   + .btn {
-    margin-left: 1em;
+    margin-left: 1rem;
   }
 }
 
@@ -60,7 +60,7 @@ a {
   .btn {
     display: block;
     width: 100%;
-    padding: 0.75em;
+    padding: 0.75rem;
     font-size: 0.9rem;
 
     + .btn {
@@ -296,21 +296,23 @@ a {
 
 @media screen and (min-width: 64em) {
   .main-content {
-    padding: 2em 6em;
-    font-size: 1.1em;
+    max-width: 64rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
   }
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .main-content {
-    padding: 2em 4em;
-    font-size: 1.1em;
+    padding: 2rem 4rem;
+    font-size: 1.1rem;
   }
 }
 
 @media screen and (max-width: 42em) {
   .main-content {
-    padding: 2em 1em;
+    padding: 2rem 1rem;
     font-size: 1rem;
   }
 }
