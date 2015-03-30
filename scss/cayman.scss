@@ -139,6 +139,9 @@ a {
   @media screen and (max-width: 42em) {
     padding: 2rem 1rem;
     font-size: 1rem;
+
+  img {
+    max-width: 100%;
   }
 
   h1,

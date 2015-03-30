@@ -107,6 +107,14 @@ a {
   .main-content {
     padding: 2rem 1rem;
     font-size: 1rem; } }
+<<<<<<< HEAD
+=======
+
+.main-content :first-child {
+  margin-top: 0; }
+.main-content img {
+  max-width: 100%; }
+>>>>>>> max-width for images
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
