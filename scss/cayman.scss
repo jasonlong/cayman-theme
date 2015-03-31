@@ -1,3 +1,24 @@
+$large-breakpoint: 64em;
+$medium-breakpoint: 42em;
+
+@mixin large {
+  @media screen and (min-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$medium-breakpoint}) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -42,16 +63,16 @@ a {
     margin-left: 1rem;
   }
 
-  @media screen and (min-width: 64em) {
+  @include large {
     padding: 0.75rem 1rem;
   }
 
-  @media screen and (min-width: 42em) and (max-width: 64em) {
+  @include medium {
     padding: 0.6rem 0.9rem;
     font-size: 0.9rem;
   }
 
-  @media screen and (max-width: 42em) {
+  @include small {
     display: block;
     width: 100%;
     padding: 0.75rem;
@@ -70,15 +91,15 @@ a {
   background-color: #159957;
   background-image: linear-gradient(120deg, #155799, #159957);
 
-  @media screen and (min-width: 64em) {
+  @include large {
     padding: 5rem 6rem;
   }
 
-  @media screen and (min-width: 42em) and (max-width: 64em) {
+  @include medium {
     padding: 3rem 4rem;
   }
 
-  @media screen and (max-width: 42em) {
+  @include small {
     padding: 2rem 1rem;
   }
 }
@@ -87,15 +108,15 @@ a {
   margin-top: 0;
   margin-bottom: 0.1rem;
 
-  @media screen and (min-width: 64em) {
+  @include large {
     font-size: 3.25rem;
   }
 
-  @media screen and (min-width: 42em) and (max-width: 64em) {
+  @include medium {
     font-size: 2.25rem;
   }
 
-  @media screen and (max-width: 42em) {
+  @include small {
     font-size: 1.75rem;
   }
 }
@@ -105,15 +126,15 @@ a {
   font-weight: normal;
   opacity: 0.7;
 
-  @media screen and (min-width: 64em) {
+  @include large {
     font-size: 1.25rem;
   }
 
-  @media screen and (min-width: 42em) and (max-width: 64em) {
+  @include medium {
     font-size: 1.15rem;
   }
 
-  @media screen and (max-width: 42em) {
+  @include small {
     font-size: 1rem;
   }
 }
@@ -124,21 +145,22 @@ a {
     margin-top: 0;
   }
 
-  @media screen and (min-width: 64em) {
+  @include large {
     max-width: 64rem;
     padding: 2rem 6rem;
     margin: 0 auto;
     font-size: 1.1rem;
   }
 
-  @media screen and (min-width: 42em) and (max-width: 64em) {
+  @include medium {
     padding: 2rem 4rem;
     font-size: 1.1rem;
   }
 
-  @media screen and (max-width: 42em) {
+  @include small {
     padding: 2rem 1rem;
     font-size: 1rem;
+  }
 
   img {
     max-width: 100%;
@@ -296,15 +318,15 @@ a {
   margin-top: 2rem;
   border-top: solid 1px #eff0f1;
 
-  @media screen and (min-width: 64em) {
+  @include large {
     font-size: 1rem;
   }
 
-  @media screen and (min-width: 42em) and (max-width: 64em) {
+  @include medium {
     font-size: 1rem;
   }
 
-  @media screen and (max-width: 42em) {
+  @include small {
     font-size: 0.9rem;
   }
 }
