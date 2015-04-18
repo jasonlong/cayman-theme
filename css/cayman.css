@@ -152,7 +152,8 @@ a {
   overflow: auto;
   font-size: 0.9rem;
   line-height: 1.45;
-  border-radius: 0.3rem; }
+  border-radius: 0.3rem;
+  -webkit-overflow-scrolling: touch; }
 .main-content pre code, .main-content pre tt {
   display: inline;
   max-width: initial;
@@ -181,7 +182,8 @@ a {
   width: 100%;
   overflow: auto;
   word-break: normal;
-  word-break: keep-all; }
+  word-break: keep-all;
+  -webkit-overflow-scrolling: touch; }
   .main-content table th {
     font-weight: bold; }
   .main-content table th, .main-content table td {

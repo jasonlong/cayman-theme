@@ -1,6 +1,10 @@
 $large-breakpoint: 64em;
 $medium-breakpoint: 42em;
 
+@mixin smooth-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
     @content;
@@ -230,6 +234,7 @@ a {
     font-size: 0.9rem;
     line-height: 1.45;
     border-radius: 0.3rem;
+    @include smooth-scroll;
   }
 
   pre code,
@@ -276,6 +281,7 @@ a {
     overflow: auto;
     word-break: normal;
     word-break: keep-all; // For Firefox to horizontally scroll wider tables.
+    @include smooth-scroll;
 
     th {
       font-weight: bold;
