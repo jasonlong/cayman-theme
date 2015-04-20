@@ -230,6 +230,7 @@ a {
     font-size: 0.9rem;
     line-height: 1.45;
     border-radius: 0.3rem;
+    -webkit-overflow-scrolling: touch;
   }
 
   pre code,
@@ -276,6 +277,7 @@ a {
     overflow: auto;
     word-break: normal;
     word-break: keep-all; // For Firefox to horizontally scroll wider tables.
+    -webkit-overflow-scrolling: touch;
 
     th {
       font-weight: bold;
