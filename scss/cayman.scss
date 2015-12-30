@@ -256,6 +256,10 @@ a {
     margin-top: 0;
   }
 
+  li {
+    word-wrap: break-word;
+  }
+  
   blockquote {
     padding: 0 1rem;
     margin-left: 0;
