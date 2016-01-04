@@ -140,6 +140,7 @@ a {
 }
 
 .main-content {
+  word-wrap: break-word;
 
   :first-child {
     margin-top: 0;
@@ -254,10 +255,6 @@ a {
   ul,
   ol {
     margin-top: 0;
-  }
-
-  li {
-    word-wrap: break-word;
   }
 
   blockquote {
