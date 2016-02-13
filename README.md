@@ -10,6 +10,10 @@ You can preview the theme at http://jasonlong.github.io/cayman-theme or with rea
 
 If you copy this theme for your own needs, feel free to customize the colors however you like. A couple of nice sources for gradient colors are http://uigradients.com and http://jxnblk.com/shade/.
 
+# Using with Jekyll
+
+If you'd like to use this theme with Jekyll, Pietro Menna has put together a package to make it easy. You can find it at https://github.com/pietromenna/jekyll-cayman-theme
+
 # License
 
 This work is licensed under a [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/) license.
