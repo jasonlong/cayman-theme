@@ -1,5 +1,20 @@
+// Breakpoints
 $large-breakpoint: 64em;
 $medium-breakpoint: 42em;
+
+// Sass variables
+$brand-color: #159957;
+$secondary-brand-color: #155799;
+$light-color: #FFFFFF;
+$body-text-color: #606c71;
+$body-link-color: #1e6bb8;
+$button-text-color: $light-color;
+$code-bg-color: #f3f6fa;
+$code-text-color: #567482;
+$gray-blue: #dce6f0;
+$blockquote-text-color: #819198;
+$table-border-color: #e9ebec;
+$ruler-color: #eff0f1;
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -29,11 +44,11 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71;
+  color: $body-text-color;
 }
 
 a {
-  color: #1e6bb8;
+  color: $body-link-color;
   text-decoration: none;
 
   &:hover {
@@ -44,19 +59,19 @@ a {
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba($button-text-color, 0.7);
+  background-color: rgba($light-color, 0.08);
+  border-color: rgba($light-color, 0.2);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba($light-color, 0.8);
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba($light-color, 0.2);
+    border-color: rgba($light-color, 0.3);
   }
 
   + .btn {
@@ -86,10 +101,10 @@ a {
 }
 
 .page-header {
-  color: #fff;
+  color: $light-color;
   text-align: center;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957);
+  background-color: $brand-color;
+  background-image: linear-gradient(120deg, $secondary-brand-color, $brand-color);
 
   @include large {
     padding: 5rem 6rem;
@@ -176,7 +191,7 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: #159957;
+    color: $brand-color;
   }
 
   p {
@@ -187,8 +202,8 @@ a {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9rem;
-    color: #383e41;
-    background-color: #f3f6fa;
+    color: $code-text-color;
+    background-color: $code-bg-color;
     border-radius: 0.3rem;
   }
 
@@ -197,17 +212,17 @@ a {
     margin-top: 0;
     margin-bottom: 1rem;
     font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    color: #567482;
+    color: $code-text-color;
     word-wrap: normal;
-    background-color: #f3f6fa;
-    border: solid 1px #dce6f0;
+    background-color: $code-bg-color;
+    border: solid 1px $gray-blue;
     border-radius: 0.3rem;
 
     > code {
       padding: 0;
       margin: 0;
       font-size: 0.9rem;
-      color: #567482;
+      color: $code-text-color;
       word-break: normal;
       white-space: pre;
       background: transparent;
@@ -260,8 +275,8 @@ a {
   blockquote {
     padding: 0 1rem;
     margin-left: 0;
-    color: #819198;
-    border-left: 0.3rem solid #dce6f0;
+    color: $blockquote-text-color;
+    border-left: 0.3rem solid $gray-blue;
 
     > :first-child {
       margin-top: 0;
@@ -287,7 +302,7 @@ a {
     th,
     td {
       padding: 0.5rem 1rem;
-      border: 1px solid #e9ebec;
+      border: 1px solid $table-border-color;
     }
   }
 
@@ -311,7 +326,7 @@ a {
     height: 2px;
     padding: 0;
     margin: 1rem 0;
-    background-color: #eff0f1;
+    background-color: $ruler-color;
     border: 0;
   }
 }
@@ -319,7 +334,7 @@ a {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px #eff0f1;
+  border-top: solid 1px $ruler-color;
 
   @include large {
     font-size: 1rem;
@@ -340,5 +355,5 @@ a {
 }
 
 .site-footer-credits {
-  color: #819198;
+  color: $blockquote-text-color;
 }
