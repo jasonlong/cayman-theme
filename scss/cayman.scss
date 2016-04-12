@@ -2,19 +2,31 @@
 $large-breakpoint: 64em;
 $medium-breakpoint: 42em;
 
-// Sass variables
-$brand-color: #159957;
-$secondary-brand-color: #155799;
-$light-color: #FFFFFF;
+// Headers
+$header-heading-color: #FFFFFF;
+$header-bg-color: #159957;
+$header-bg-color-secondary: #155799;
+$headings-color: #159957;
+
+// Buttons
+$btn-color: #FFFFFF;
+$btn-bg-color: $btn-color;
+$btn-border-color: $btn-color;
+$btn-text-color: $btn-color;
+
+// Text
 $body-text-color: #606c71;
 $body-link-color: #1e6bb8;
-$button-text-color: $light-color;
+$blockquote-text-color: #819198;
+
+// Code
 $code-bg-color: #f3f6fa;
 $code-text-color: #567482;
-$gray-blue: #dce6f0;
-$blockquote-text-color: #819198;
+
+// Borders
+$border-color: #dce6f0;
 $table-border-color: #e9ebec;
-$ruler-color: #eff0f1;
+$hr-border-color: #eff0f1;
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -59,19 +71,19 @@ a {
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
-  color: rgba($button-text-color, 0.7);
-  background-color: rgba($light-color, 0.08);
-  border-color: rgba($light-color, 0.2);
+  color: rgba($btn-text-color, 0.7);
+  background-color: rgba($btn-bg-color, 0.08);
+  border-color: rgba($btn-border-color, 0.2);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
   &:hover {
-    color: rgba($light-color, 0.8);
+    color: rgba($btn-text-color, 0.8);
     text-decoration: none;
-    background-color: rgba($light-color, 0.2);
-    border-color: rgba($light-color, 0.3);
+    background-color: rgba($btn-bg-color, 0.2);
+    border-color: rgba($btn-border-color, 0.3);
   }
 
   + .btn {
@@ -101,10 +113,10 @@ a {
 }
 
 .page-header {
-  color: $light-color;
+  color: $header-heading-color;
   text-align: center;
-  background-color: $brand-color;
-  background-image: linear-gradient(120deg, $secondary-brand-color, $brand-color);
+  background-color: $header-bg-color;
+  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
 
   @include large {
     padding: 5rem 6rem;
@@ -191,7 +203,7 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: $brand-color;
+    color: $headings-color;
   }
 
   p {
@@ -215,7 +227,7 @@ a {
     color: $code-text-color;
     word-wrap: normal;
     background-color: $code-bg-color;
-    border: solid 1px $gray-blue;
+    border: solid 1px $border-color;
     border-radius: 0.3rem;
 
     > code {
@@ -276,7 +288,7 @@ a {
     padding: 0 1rem;
     margin-left: 0;
     color: $blockquote-text-color;
-    border-left: 0.3rem solid $gray-blue;
+    border-left: 0.3rem solid $border-color;
 
     > :first-child {
       margin-top: 0;
@@ -326,7 +338,7 @@ a {
     height: 2px;
     padding: 0;
     margin: 1rem 0;
-    background-color: $ruler-color;
+    background-color: $hr-border-color;
     border: 0;
   }
 }
@@ -334,7 +346,7 @@ a {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px $ruler-color;
+  border-top: solid 1px $hr-border-color;
 
   @include large {
     font-size: 1rem;
