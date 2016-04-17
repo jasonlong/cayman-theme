@@ -3,18 +3,19 @@ $large-breakpoint: 64em;
 $medium-breakpoint: 42em;
 
 // Headers
-$header-heading-color: #FFFFFF;
+$header-heading-color: #fff;
 $header-bg-color: #159957;
 $header-bg-color-secondary: #155799;
-$headings-color: #159957;
+
 
 // Buttons
-$btn-color: #FFFFFF;
+$btn-color: rgb(255,255,255);
 $btn-bg-color: $btn-color;
 $btn-border-color: $btn-color;
 $btn-text-color: $btn-color;
 
 // Text
+$section-headings-color: #159957;
 $body-text-color: #606c71;
 $body-link-color: #1e6bb8;
 $blockquote-text-color: #819198;
@@ -203,7 +204,7 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: $headings-color;
+    color: $section-headings-color;
   }
 
   p {
