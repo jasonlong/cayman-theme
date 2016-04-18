@@ -8,7 +8,7 @@ module.exports = function(grunt) {
       },
       sass: {
         files: 'scss/*.scss',
-        tasks: ['sass', 'autoprefixer', 'bsReload:css']
+        tasks: ['sass', 'postcss', 'bsReload:css']
       },
       html: {
         files: '*.html',
@@ -28,9 +28,11 @@ module.exports = function(grunt) {
       }
     },
 
-    autoprefixer: {
+    postcss: {
       options: {
-        browsers: ['last 2 versions', 'ie 8', 'ie 9']
+        processors: [
+          require('autoprefixer')({browsers: ['last 2 versions', 'ie 8', 'ie 9']})
+        ]
       },
       dist: {
         files: {
@@ -60,7 +62,7 @@ module.exports = function(grunt) {
 
   // Load dependencies
   grunt.loadNpmTasks('grunt-browser-sync');
-  grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
 
