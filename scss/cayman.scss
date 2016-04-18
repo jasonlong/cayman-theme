@@ -7,13 +7,6 @@ $header-heading-color: #fff;
 $header-bg-color: #159957;
 $header-bg-color-secondary: #155799;
 
-
-// Buttons
-$btn-color: rgb(255,255,255);
-$btn-bg-color: $btn-color;
-$btn-border-color: $btn-color;
-$btn-text-color: $btn-color;
-
 // Text
 $section-headings-color: #159957;
 $body-text-color: #606c71;
@@ -72,19 +65,19 @@ a {
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
-  color: rgba($btn-text-color, 0.7);
-  background-color: rgba($btn-bg-color, 0.08);
-  border-color: rgba($btn-border-color, 0.2);
+  color: rgba(255,255,255, 0.7);
+  background-color: rgba(255,255,255, 0.08);
+  border-color: rgba(255,255,255, 0.2);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
   &:hover {
-    color: rgba($btn-text-color, 0.8);
+    color: rgba(255,255,255, 0.8);
     text-decoration: none;
-    background-color: rgba($btn-bg-color, 0.2);
-    border-color: rgba($btn-border-color, 0.3);
+    background-color: rgba(255,255,255, 0.2);
+    border-color: rgba(255,255,255, 0.3);
   }
 
   + .btn {
