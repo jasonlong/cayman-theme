@@ -5,6 +5,7 @@
   "author": "Jason Long",
   "scss": "./scss/cayman.scss",
   "devDependencies": {
+    "autoprefixer": "^6.6.0",
     "grunt-browser-sync": "~2.1.1",
     "grunt": "~1.0.1",
     "grunt-postcss": "~0.8.0",
