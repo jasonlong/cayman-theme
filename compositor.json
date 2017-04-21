@@ -1,0 +1,101 @@
+{
+  "name": "jasonlong/cayman-theme",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Future",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Avenir Next\", Helvetica, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "textTransform": "uppercase",
+      "letterSpacing": "0.2em"
+    },
+    "alternativeText": {
+      "textTransform": "uppercase",
+      "fontWeight": 400,
+      "letterSpacing": "0.2em",
+      "opacity": 0.75
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    },
+    "layout": {
+      "centered": true,
+      "maxWidth": 1024,
+      "bannerHeight": "80vh"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "http://jasonlong.github.io/cayman-theme/",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/jasonlong/cayman-theme",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/Cayman",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "cayman-theme",
+      "subhead": "A responsive theme for GitHub Pages",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "cayman-theme: A responsive theme for GitHub Pages",
+          "url": "http://jasonlong.github.io/cayman-theme/"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "jasonlong",
+          "repo": "cayman-theme"
+        }
+      ],
+      "text": "v1.0.0"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p>Cayman is a clean, responsive theme for <a href=\"https://pages.github.com\">GitHub Pages</a>. This theme is available as an option if you use the <a href=\"https://help.github.com/articles/creating-pages-with-the-automatic-generator/\">Automatic Page Generator</a> or you can copy the template and styles to use on your own.</p>\n<p>You can preview the theme at <a href=\"http://jasonlong.github.io/cayman-theme\">http://jasonlong.github.io/cayman-theme</a> or with real content at <a href=\"http://jasonlong.github.io/geo_pattern\">http://jasonlong.github.io/geo_pattern</a>.</p>\n<p><img src=\"http://cl.ly/image/1T3r3d18311V/content\"></p>\n<h1>Customizations</h1>\n<p>If you copy this theme for your own needs, feel free to customize the colors however you like. A couple of nice sources for gradient colors are <a href=\"http://uigradients.com\">http://uigradients.com</a> and <a href=\"http://jxnblk.com/shade/\">http://jxnblk.com/shade/</a>.</p>\n<h1>Using with Jekyll</h1>\n<p>If you&apos;d like to use this theme with Jekyll, Pietro Menna has put together a package to make it easy. You can find it at <a href=\"https://github.com/pietromenna/jekyll-cayman-theme\">https://github.com/pietromenna/jekyll-cayman-theme</a></p>\n<h1>License</h1>\n<p>This work is licensed under a <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International</a> license.</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/jasonlong/cayman-theme",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/jasonlong",
+          "text": "jasonlong"
+        }
+      ]
+    }
+  ]
+}
