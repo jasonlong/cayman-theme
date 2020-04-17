@@ -15,7 +15,6 @@ $blockquote-text-color: #819198;
 
 // Code
 $code-bg-color: #f3f6fa;
-$code-text-color: #567482;
 
 // Borders
 $border-color: #dce6f0;
@@ -208,7 +207,6 @@ a {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9rem;
-    color: $code-text-color;
     background-color: $code-bg-color;
     border-radius: 0.3rem;
   }
@@ -218,7 +216,6 @@ a {
     margin-top: 0;
     margin-bottom: 1rem;
     font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    color: $code-text-color;
     word-wrap: normal;
     background-color: $code-bg-color;
     border: solid 1px $border-color;
@@ -228,7 +225,6 @@ a {
       padding: 0;
       margin: 0;
       font-size: 0.9rem;
-      color: $code-text-color;
       word-break: normal;
       white-space: pre;
       background: transparent;
